@@ -1,0 +1,59 @@
+.intro {
+  height: 90vh;
+  width: 90vw;
+  background-color: $main-color;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  &__text {
+    font-family: "Lato-Regular";
+    color: $light-color;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+    margin-top: 16vh;
+    gap: 3vh;
+
+    &__quote {
+      font-family: "FiraCode-Light";
+      font-size: 0.8rem;
+      color: $tertiary-color;
+    }
+
+    &__name {
+      font-family: "Lato-Bold";
+      font-size: 1.6rem;
+    }
+
+    &__speech {
+      font-family: "Lato-Bold";
+      width: 100%;
+      font-size: 1.3rem;
+
+      &__animated {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2px;
+    margin-top: 25vh;
+
+    &__button {
+      border: 1px $dark-color solid;
+      color: white;
+      background-color: $secondary-color;
+      width: 200px;
+      height: 30px;
+      border-radius: 5px;
+    }
+
+  }
+}
