@@ -1,8 +1,28 @@
-.navBar {
-height: 40px;
-width: 100vw;
-background-color: aqua;
-position:fixed;
-z-index: 50;
-top: 0;
+.nav {
+  height: 40px;
+  width: 90vw;
+  padding-top: 3vh;
+  background-color: transparent;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    width:50vw;
+  }
+  &__list {
+    width: 50vw;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    font-family: Lato-Regular;
+      &__item {
+        list-style-type: none;
+        &__link {
+          text-decoration: none;
+          color: white
+        }
+      }
+  }
 }
