@@ -1,0 +1,62 @@
+// Handling navbar mobile layout
+
+.verticalbar {
+    height: 30vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+width: 100vw;
+    z-index: 50;
+
+    &__logos {
+      display: flex;
+      flex-direction: row;
+      gap: 4vw;
+      height: 30vh;
+
+      &__link {
+        cursor: pointer;
+      }
+    }
+    &__line {
+      width: 2px;
+      height: 10vh;
+      background-color: white;
+    }
+  }
+// Handling navbar desktop layout
+@media all and (min-width: 768px) {
+  .verticalbar {
+    height: 50vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 3vw;
+
+    &__logos {
+      display: flex;
+      flex-direction: column;
+      gap: 5vh;
+      height: 50vh;
+
+      &__link {
+        cursor: pointer;
+        transition: transform 650ms;
+        will-change: transform;
+      }
+
+      &__link:hover {
+        transform: translateX(-12px) scale(1.4);
+      }
+    }
+    &__line {
+      width: 4px;
+      height: 18vh;
+      background-color: white;
+    }
+  }
+}

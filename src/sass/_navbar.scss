@@ -1,28 +1,144 @@
+// Handling navbar mobile layout
+
 .nav {
-  height: 40px;
-  width: 90vw;
-  padding-top: 3vh;
-  background-color: transparent;
+  // display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   z-index: 50;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  &__logo {
-    width:50vw;
-  }
-  &__list {
-    width: 50vw;
+  background-color: $dark-color;
+
+  &__burger {
     display: flex;
-    justify-content:space-around;
-    flex-direction: row;
-    font-family: Lato-Regular;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    gap: 5px;
+    cursor: pointer;
+
+    &__line {
+      width: 22px;
+      height: 2px;
+      background-color: white;
+      border-radius: 15px;
+
+      &-2 {
+        width: 19px;
+        height: 2px;
+        background-color: white;
+        border-radius: 15px;
+      }
+    }
+  }
+  &__line {
+    width: 3px;
+    height: 15vh;
+    background-color: white;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 7vh;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      font-family: Lato-Regular;
+      text-align: center;
+      gap: 3vh;
+
       &__item {
         list-style-type: none;
+
         &__link {
           text-decoration: none;
-          color: white
+          color: white;
         }
       }
+    }
+
+    &__calltoaction {
+      border: 1px $secondary-color solid;
+      color: $secondary-color;
+      background-color: transparent;
+      width: 40vw;
+      height: 30px;
+      border-radius: 5px;
+      margin-top: 6vh;
+    }
+  }
+}
+
+// Handling navbar desktop layout
+@media all and (min-width: 768px) {
+  .nav {
+    height: 40px;
+    width: 100vw;
+    padding-top: 3vh;
+    background-color: transparent;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    &__burger {
+    display: none;
+    }
+    &__line {
+      width: 5vw;
+      height: 3px;
+      background-color: white;
+    }
+
+    &__logo {
+      width: 50vw;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+
+      &__list {
+        width: 45vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-family: Lato-Regular;
+        text-align: right;
+
+        &__item {
+          list-style-type: none;
+
+          &__link {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+
+      &__calltoaction {
+        border: 1px $secondary-color solid;
+        color: $secondary-color;
+        background-color: transparent;
+        width: 10vw;
+        height: 30px;
+        border-radius: 5px;
+        margin: 0 2vw 0 2vw;
+      }
+    }
   }
 }

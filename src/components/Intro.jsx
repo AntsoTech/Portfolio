@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Intro = () => {
   // je crée un tableau avec les périphrases
@@ -33,14 +34,14 @@ const Intro = () => {
           {" "}
           Découvrir mon histoire{" "}
         </button>
-        <div class="intro__footer__arrow">
-          <a href="">
+        <div className="intro__footer__arrow">
+          <NavLink to="#blank">
             <img
-              src="./public/assets/images/arrow-down-circle.svg"
-              alt="Découvrir le concept"
-              width="30vw"
+              src="./public/assets/images/down-arrow.png"
+              alt="Découvrir mon histoire"
+              width="20vw"
             />
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
