@@ -1,0 +1,14 @@
+.watermark {
+  position: absolute;
+  top: 2vh;
+  left: 10vw;
+  background-color: transparent;
+  z-index: 1;
+
+  &__title {
+      font-family: "FiraCode-Medium";
+      font-size: 10vw;
+      color: $light-color;
+      opacity: 40%;  
+  }
+}

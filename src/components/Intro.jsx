@@ -13,16 +13,21 @@ const Intro = () => {
   return (
     <div className="intro">
       <div className="intro__text">
-        <h3 className="intro__text__quote"> {`< Hello, je m'appelle  / >`} </h3>
+        <h3 className="intro__text__quote"> {`< Hello, je m'appelle >`} </h3>
         <h1 className="intro__text__name">Antso RAKOTOSON </h1>
         <h2 className="intro__text__speech">
           {" "}
-          Je suis développeur et je crée des expériences web et mobiles <br />
-          qui
-          <span className="intro__text__speech__animated">
+          Je suis développeur et je crée des expériences web et mobiles qui
+          <p className="intro__text__speech__animated">
             {" "}
-            {sentencesList[3]}{" "}
-          </span>
+            <span>
+              apportent de la valeur <br />
+              suscitent de l'émotion <br />
+              créent une vraie relation <br />
+              génèrent une véritable interaction
+              <br />{" "}
+            </span>
+          </p>
         </h2>
       </div>
       <div className="intro__footer">

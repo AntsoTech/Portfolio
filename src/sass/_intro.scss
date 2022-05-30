@@ -30,10 +30,36 @@
     &__speech {
       font-family: "Lato-Bold";
       width: 100%;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
 
       &__animated {
         color: $secondary-color;
+        font-size: 1.2rem;
+        height: 1.4rem;
+        line-height: 1.4rem;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        span {
+          position: absolute;
+          top: 0;
+          animation: slide 6s ease-in-out infinite;        
+        }
+        @keyframes slide {
+          0% {
+            top: 0;
+          }
+          25% {
+            top: -1.4rem;
+          }
+          50% {
+            top: -2.8rem;
+          }
+          75% {
+            top: -4.2rem;
+          }
+        }
       }
     }
   }

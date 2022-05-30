@@ -3,7 +3,8 @@
 .verticalbar {
   height: 30vh;
   flex-direction: column;
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
   position: fixed;
   bottom: 0;
