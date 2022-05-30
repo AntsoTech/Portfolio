@@ -5,11 +5,11 @@ const NavBar = () => {
   return (
     <div className="nav">
       <div className="nav__burger">
-        <div className="nav__burger__line"></div>
-        <div className="nav__burger__line-2"></div>
-        <div className="nav__burger__line"></div>
+        <div className="nav__burger__line" />
+        <div className="nav__burger__line-2" />
+        <div className="nav__burger__line" />
       </div>
-      <div className="nav__line"></div>
+      <div className="nav__line" />
       <div className="nav__logo">
         <img src="./public/assets/images/logo.svg" alt="logo" />
       </div>

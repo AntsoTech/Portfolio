@@ -1,31 +1,31 @@
 // Handling navbar mobile layout
 
 .verticalbar {
-    height: 30vh;
-    flex-direction: column;
+  height: 30vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  z-index: 50;
+
+  &__logos {
     display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-width: 100vw;
-    z-index: 50;
+    flex-direction: row;
+    gap: 4vw;
+    height: 30vh;
 
-    &__logos {
-      display: flex;
-      flex-direction: row;
-      gap: 4vw;
-      height: 30vh;
-
-      &__link {
-        cursor: pointer;
-      }
-    }
-    &__line {
-      width: 2px;
-      height: 10vh;
-      background-color: white;
+    &__link {
+      cursor: pointer;
     }
   }
+  &__line {
+    width: 2px;
+    height: 10vh;
+    background-color: white;
+  }
+}
 // Handling navbar desktop layout
 @media all and (min-width: 768px) {
   .verticalbar {
@@ -35,7 +35,8 @@ width: 100vw;
     align-items: center;
     position: fixed;
     bottom: 0;
-    right: 3vw;
+    right: 3px;
+    width: 7vw;
 
     &__logos {
       display: flex;

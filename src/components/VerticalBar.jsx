@@ -29,7 +29,7 @@ const VerticalBar = () => {
           className="verticalbar__logos__link"
         />
       </div>
-      <div className="verticalbar__line"></div>
+      <div className="verticalbar__line" />
     </div>
   );
 };
