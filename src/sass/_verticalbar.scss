@@ -1,21 +1,22 @@
 // Handling navbar mobile layout
 
 .verticalbar {
-  height: 30vh;
+  height: 25vh;
   flex-direction: column;
-  // display: flex;
-  display: none;
+  display: flex;
+  justify-content: flex-end;
+  // display: none;
   align-items: center;
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 7vw;
   z-index: 50;
 
   &__logos {
     display: flex;
     flex-direction: row;
     gap: 4vw;
-    height: 30vh;
+    height: 10vh;
 
     &__link {
       cursor: pointer;

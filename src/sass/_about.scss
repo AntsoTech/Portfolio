@@ -4,7 +4,7 @@
   background-color: $dark-color;
   position: relative;
   z-index: 2;
-  padding-top: 10vh;
+  padding-top: 7vh;
   padding-left: 5vw;
   padding-right: 5vw;
   color: $light-color;
@@ -18,11 +18,11 @@
 
     &__title {
       font-family: "FiraCode-Light";
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
     &__quote {
       font-family: "FiraCode-Light";
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -66,6 +66,55 @@
       display: flex;
       flex-direction: column;
       gap: 2vh;
+    }
+  }
+}
+
+// Handling navbar desktop layout
+@media all and (min-width: 768px) {
+  .about {
+    height: 100vh;
+    width: 70vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+    &__paragraph {
+      &__title {
+        font-size: 1rem;
+      }
+      &__quote {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__info {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      &__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+
+      &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
     }
   }
 }

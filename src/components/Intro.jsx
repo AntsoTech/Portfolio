@@ -2,14 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Intro = () => {
-  // je crée un tableau avec les périphrases
-  const sentencesList = [
-    `apportent de la valeur`,
-    `suscitent de l'émotion`,
-    `créent une vraie relation`,
-    `génèrent une véritable interaction`,
-  ];
-
   return (
     <div className="intro">
       <div className="intro__text">
@@ -22,7 +14,7 @@ const Intro = () => {
             {" "}
             <span>
               apportent de la valeur <br />
-              suscitent de l'émotion <br />
+              suscitent de l&apos;émotion <br />
               créent une vraie relation <br />
               génèrent une véritable interaction
               <br />{" "}

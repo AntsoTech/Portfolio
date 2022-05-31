@@ -1,4 +1,5 @@
 import React from "react";
+/* eslint react/prop-types: 0 */
 
 const Watermark = ({ text }) => {
   return (
