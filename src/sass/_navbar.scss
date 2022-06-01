@@ -1,42 +1,117 @@
-// Handling burger menu 
+// Handling burger menu
 @media all and (max-width: 768px) {
-.burger {
-  flex-direction: column;
-  align-items: flex-end;
-  position: fixed;
-  top: 2%;
-  right: 2%;
-  gap: 5px;
-  cursor: pointer;
+  .burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
 
-  &__line {
-    width: 22px;
-    height: 2px;
-    background-color: white;
-    border-radius: 15px;
+    &__line {
+      &-1 {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: white;
+        border-radius: 15px;
+        animation: changebardown1 1s ease-in-out forwards;
 
-    &-2 {
-      width: 19px;
-      height: 2px;
-      background-color: white;
-      border-radius: 15px;
+        @keyframes changebardown1 {
+          from {
+            transform: rotate(-45deg) translate(-6px, 6px);
+          }
+        }
+        to {
+          display: initial;
+        }
+      }
+      &-2 {
+        width: 19px;
+        height: 2px;
+        border-radius: 15px;
+        position: absolute;
+        top: 8px;
+      }
+      &-3 {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: white;
+        border-radius: 15px;
+        top: 16px;
+        animation: changebarup3 1s ease-in-out forwards;
+
+        @keyframes changebarup3 {
+          from {
+            transform: rotate(45deg) translate(-6px, 6px);
+          }
+          to {
+            display: initial;
+          }
+        }
+      }
     }
   }
-}
 
-.burger-open {
-  display: flex;
-}
+  .line-visible {
+    animation: barvisible 1s ease-in-out forwards;
 
-.burger-hidden {
-  display: none;
-}
+    @keyframes barvisible {
+      from {
+        background-color: transparent;
+      }
+    to {
+      background-color: $light-color;
+    }  
+  }}
+
+  .line-hidden {
+    animation: baropacity 1s ease-in-out forwards;
+
+    @keyframes baropacity {
+      from {
+        background-color: $light-color;
+      }
+    }
+    to {
+      background-color: transparent;
+    }  }
+
+  .line-1-animated {
+    animation: changebardown 1s ease-in-out forwards;
+
+    @keyframes changebardown {
+      from {
+      }
+      to {
+        transform: rotate(-45deg) translate(-6px, 6px);
+      }
+    }
+  }
+  .line-3-animated {
+    animation: changebarup 1s ease-in-out forwards;
+
+    @keyframes changebarup {
+      from {
+      }
+      to {
+        transform: rotate(45deg) translate(-5px, -5px);
+      }
+    }
+  }
 }
 
 // Handling navbar mobile layout
 .nav-open {
   display: flex;
-} 
+}
 
 .nav-hidden {
   display: none;
@@ -66,43 +141,44 @@
       to {
         height: 15vh;
       }
-    }}
-
-    &__container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      margin-top: 7vh;
-
-      &__list {
-        display: flex;
-        flex-direction: column;
-        font-family: Lato-Regular;
-        text-align: center;
-        gap: 3vh;
-
-        &__item {
-          list-style-type: none;
-
-          &__link {
-            text-decoration: none;
-            color: white;
-          }
-        }
-      }
-
-      &__calltoaction {
-        border: 1px $secondary-color solid;
-        color: $secondary-color;
-        background-color: transparent;
-        width: 40vw;
-        height: 30px;
-        border-radius: 5px;
-        margin-top: 6vh;
-      }
     }
   }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 7vh;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      font-family: Lato-Regular;
+      text-align: center;
+      gap: 3vh;
+
+      &__item {
+        list-style-type: none;
+
+        &__link {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    &__calltoaction {
+      border: 1px $secondary-color solid;
+      color: $secondary-color;
+      background-color: transparent;
+      width: 40vw;
+      height: 30px;
+      border-radius: 5px;
+      margin-top: 6vh;
+    }
+  }
+}
 
 // Handling navbar desktop layout
 @media all and (min-width: 768px) {

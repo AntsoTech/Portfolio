@@ -8,7 +8,7 @@ const Skills = () => {
       <Watermark text="MES TECHNOLOGIES" />
       <div className="skills__intro">
         <h2 className="skills__intro__quote">
-          « On se lasse de tout, excepté d'apprendre. »
+          « On se lasse de tout, excepté d&apos;apprendre. »
         </h2>
         <h2 className="skills__intro__author"> Virgile</h2>
       </div>

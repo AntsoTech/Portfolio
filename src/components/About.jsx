@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Watermark from "./Watermark";
+import React from "react";
 import Fade from "react-reveal/Fade";
+import Watermark from "./Watermark";
 
 const About = () => {
   return (

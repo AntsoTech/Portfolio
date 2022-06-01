@@ -8,13 +8,29 @@ const NavBar = () => {
   return (
     <div>
       <div
-        className={isOpen ? "burger burger-hidden" : "burger burger-open"}
-        type="button"
+        className="burger"
         onClick={() => setIsOpen(!isOpen)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={() => setIsOpen(!isOpen)}
       >
-        <div className="burger__line" />
-        <div className="burger__line-2" />
-        <div className="burger__line" />
+        <div
+          className={
+            isOpen ? "burger__line-1 line-1-animated" : "burger__line-1"
+          }
+        />
+        <div
+          className={
+            isOpen
+              ? "burger__line-2 line-hidden"
+              : "burger__line-2 line-visible "
+          }
+        />
+        <div
+          className={
+            isOpen ? "burger__line-3 line-3-animated" : "burger__line-3"
+          }
+        />
       </div>
       <div className={isOpen ? "nav nav-open" : "nav nav-hidden"}>
         <div className="nav__line" />
