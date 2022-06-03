@@ -1,0 +1,58 @@
+.softskills {
+  height: auto;
+  width: 90vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: $dark-color;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    color: $light-color;
+    padding-bottom: 5vh;
+
+    &__quote {
+      font-family: "FiraCode-Light";
+      font-size: 1.1rem;
+    }
+
+    &__author {
+      font-family: "FiraCode-Light";
+      font-size: 0.9rem;
+    }
+  }
+
+  &__container {
+    height: auto;
+    width: 75vw;
+    padding-bottom: 5vh;
+    color: $light-color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    h2 {
+      font-family: "Lato-Thin";
+      font-size: 1.1rem;
+    }
+
+    &-left{
+        align-items:flex-start;
+        text-align: left;
+    }
+    &-right{
+        align-items:flex-end;
+        text-align: right;
+    }
+  }
+}

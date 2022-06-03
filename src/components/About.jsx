@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
       <Watermark text="MON HISTOIRE" />
       {/* Introduction text */}
-      <Fade bottom>
+      <Fade bottom delay={1000} fraction={1}>
         <div className="about__paragraph">
           <h2 className="about__paragraph__quote">
             « La meilleure façon de prédire l’avenir c’est de le créer. »
@@ -16,8 +16,8 @@ const About = () => {
         </div>
       </Fade>
       {/* Main text */}
-      <div className="about__info">
-        <Fade bottom>
+      <Fade bottom cascade delay={1000} fraction={1}>
+        <div className="about__info">
           <div className="about__info__intro">
             <h4>{`< Intro  / >`}</h4>
             <p>
@@ -27,9 +27,8 @@ const About = () => {
               valeur pour leurs clients.
             </p>
           </div>
-        </Fade>
-        <div className="about__info__main">
-          <Fade bottom>
+
+          <div className="about__info__main">
             <h4>{`< Main / >`} </h4>
             <div className="about__info__main__experience1">
               {" "}
@@ -41,25 +40,21 @@ const About = () => {
                 Typescript / React / SQL
               </p>
             </div>
-          </Fade>
-          <Fade bottom>
             <div className="about__info__main__experience2">
               {" "}
               <h3>{`< 2018-2021 >`}</h3>
               <h2> Galeries Lafayette </h2>
               <p>Head of innovation and digital-in-store product</p>
             </div>
-          </Fade>
-          <Fade bottom>
             <div className="about__info__main__experience3">
               {" "}
               <h3>{`< 2015-2018 >`}</h3>
               <h2> Carrefour France (BU proximité)</h2>
               <p>Head of ecommerce operations & innovation</p>
             </div>
-          </Fade>
+          </div>
         </div>
-      </div>
+      </Fade>
     </div>
   );
 };
