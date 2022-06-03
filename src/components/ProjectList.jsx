@@ -12,21 +12,21 @@ const ProjectList = () => {
         imagename1="tinyhouse1.png"
         imagename2="tinyhouse2.png"
         description="Xpanse is a project where we created the first spatial platform that connects astronauts with spatial and discovery missions"
-        url="blank"
+        url="#"
       />
       <ProjectDetails
         title="ASTRONAUTS XPANSE"
         imagevertical="xpanse2.png"
         imagehorizontal="xpanse1.png"
         description="Xpanse is a project where we created the first spatial platform that connects astronauts with spatial and discovery missions"
-        url="blank"
+        url="#"
       />
       <ProjectDetails2
         title="E-LEARNING PLATFORM"
         imagename1="starnethorizontal.jpg"
         imagename2="starnetvertical2.jpg"
         description="Xpanse is a project where we created the first spatial platform that connects astronauts with spatial and discovery missions"
-        url="blank"
+        url="#"
       />
     </div>
   );

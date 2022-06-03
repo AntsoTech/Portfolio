@@ -1,6 +1,6 @@
 import React from "react";
-import Watermark from "./Watermark";
 import Fade from "react-reveal/Fade";
+import Watermark from "./Watermark";
 
 const Skills = () => {
   const imageWidth = "70px";

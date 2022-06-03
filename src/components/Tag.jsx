@@ -1,4 +1,5 @@
 import React from "react";
+/* eslint react/prop-types: 0 */
 
 const Tag = ({ text, backgroundColor = "rgb(0, 0, 0,0.6)" }) => {
   return (
