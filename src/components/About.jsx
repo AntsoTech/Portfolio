@@ -7,7 +7,7 @@ const About = () => {
     <div className="about">
       <Watermark text="MON HISTOIRE" />
       {/* Introduction text */}
-      <Fade bottom delay={1000} fraction={1}>
+      <Fade bottom delay={600} fraction={0.4}>
         <div className="about__paragraph">
           <h2 className="about__paragraph__quote">
             « La meilleure façon de prédire l’avenir c’est de le créer. »
@@ -16,7 +16,7 @@ const About = () => {
         </div>
       </Fade>
       {/* Main text */}
-      <Fade bottom cascade delay={1000} fraction={1}>
+      <Fade bottom cascade delay={600} fraction={0.2}>
         <div className="about__info">
           <div className="about__info__intro">
             <h4>{`< Intro  / >`}</h4>
