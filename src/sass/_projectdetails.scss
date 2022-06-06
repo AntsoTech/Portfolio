@@ -1,12 +1,83 @@
 .projectDetails {
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
+  padding-top: 5vh;
+  position: relative;
+
+  &__titles {
+    z-index: 14;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    bottom: 2vh;
+    right: 4vw;
+    height: 30%;
+
+    &__tags {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1vw;
+      margin-bottom: 0%;
+    }
+
+    &__description {
+      color: $light-color;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 90%;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      padding: 2% 2%;
+      margin: 2% 0;
+      font-family: "Firacode-Light";
+      text-align: right;
+    }
+
+    &__button {
+      // border: 1px $light-color solid;
+      border: none;
+      color: $light-color;
+      background-color: $secondary-color;
+      width: 160px;
+      padding: 5px 0;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-align: center;
+      box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      color: $light-color;
+      font-size: 10.7vw;
+      font-family: "Lato-regular";
+      text-align: left;
+      top: -228%;
+      position: absolute;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+    border-radius: 10px;
+  }
+
+  &__imagehorizontal {
+    display: none;
+  }
 }
 
 @media all and (min-width: 768px) {
   .projectDetails {
-    padding-top: 5vh;
     position: relative;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -16,6 +87,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 0%;
     }
     &__titles {
       grid-area: 1 / 2 / 5 / 4;
@@ -24,6 +96,8 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      justify-content: flex-start;
+      position: static;
 
       &__tags {
         display: flex;
@@ -34,35 +108,16 @@
       }
 
       &__description {
-        color: $light-color;
-        background-color: rgba(0, 0, 0, 0.2);
         width: 25vw;
         font-size: 0.9rem;
-        border-radius: 5px;
-        padding: 2% 2%;
-        margin: 2% 0;
-        font-family: "Firacode-Light";
-      }
-
-      &__button {
-        // border: 1px $light-color solid;
-        border: none;
-        color: white;
-        background-color: $secondary-color;
-        width: 160px;
-        padding: 5px 0;
-        height: 30px;
-        border-radius: 5px;
-        font-size: 1rem;
-        text-align: center;
-        box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+        text-align: justify;
       }
 
       h1 {
-        color: $light-color;
-        font-size: 6.7vw;
+        font-size: 7.7vw;
         font-family: "Lato-regular";
         text-align: right;
+        position: static;
       }
     }
     &__imagevertical {
@@ -72,58 +127,7 @@
 
     &__imagehorizontal {
       grid-area: 3 / 2 / 8 / 4;
-    }
-  }
-}
-
-@media all and (max-width: 768px) {
-  .projectDetails {
-    height: 100vh;
-    width: 100%;
-    padding-top: 5vh;
-    position: relative;
-
-    h1 {
-      color: $light-color;
-      font-size: 2.7rem;
-      font-family: "Lato-Bold";
-      position: absolute;
-      width: 60vw;
-      top: 0;
-      z-index: 20;
-    }
-    &__button {
-      border: 1px $light-color solid;
-      color: white;
-      background-color: $secondary-color;
-      width: 160px;
-      height: 30px;
-      border-radius: 5px;
-      font-size: 1rem;
-      vertical-align: center;
-      position: absolute;
-      right: 0;
-      top: 9vh;
-      z-index: 20;
-    }
-
-    &__images {
-      display: flex;
-      flex-direction: column;
-      padding-top: 5px;
-      height: 70vh;
-      gap: 2vw;
-      img {
-        width: 100%;
-        filter: grayscale(100%);
-      }
-
-      &__1 {
-        display: none;
-      }
-      &__2 {
-        display: block;
-      }
+      display: grid;
     }
   }
 }
