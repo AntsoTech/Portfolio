@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 import Watermark from "./Watermark";
 
 const Skills = () => {
-  const imageWidth = "70px";
+  const imageWidth = "60px";
   return (
     <div className="skills">
       <Watermark text="MES TECHNOS" />
@@ -128,6 +128,14 @@ const Skills = () => {
         data-content="Les autres outils que j'utilise"
       />
       <div className="skills__container">
+        <div className="skills__container__box">
+          <img
+            src="./public/assets/images/husky.png"
+            alt="husky"
+            width={imageWidth}
+          />
+          <h2> Husky </h2>
+        </div>
         <div className="skills__container__box">
           <img
             src="./public/assets/images/Figma-light.svg"

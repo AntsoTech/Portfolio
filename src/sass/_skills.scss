@@ -37,9 +37,9 @@
   &__hr {
     border: none;
     outline: 0;
-    border-top: 1px solid ; 
+    border-top: 1px solid;
     color: $tertiary-color;
-    opacity: 0.6;
+    opacity: 0.8;
     overflow: visible;
     text-align: center;
     height: 10px;
@@ -60,7 +60,7 @@
   &__container {
     display: flex;
     justify-content: center;
-    gap: 2vh;
+    gap: 6vh;
     align-items: flex-start;
     flex-wrap: wrap;
     height: auto;
@@ -74,12 +74,12 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
-      gap: 2px;
+      gap: 3px;
       color: $light-color;
       text-align: center;
 
       h2 {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         font-family: "FiraCode-Light";
       }
     }
@@ -87,6 +87,7 @@
     img {
       z-index: 20;
       opacity: initial;
+      border-radius: 15px;
     }
   }
 }
