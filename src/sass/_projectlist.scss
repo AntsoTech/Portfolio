@@ -1,13 +1,11 @@
 .projectList {
   width: 80vw;
-  padding-top: 30vh;
-  padding-bottom: 20vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding: 30vh 10vw 20vh 10vw;
   background-color: $main-color;
   position: relative;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5vh;
 }

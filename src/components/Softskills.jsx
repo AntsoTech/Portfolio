@@ -20,7 +20,7 @@ const Softskills = () => {
 
   return (
     <div className="softskills">
-      <Watermark text="MES COMPÉTENCES" />
+      <Watermark text="MES VALEURS" />
       {/* Introduction */}
       <div className="softskills__intro">
         <h2 className="softskills__intro__quote">

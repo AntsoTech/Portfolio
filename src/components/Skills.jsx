@@ -6,7 +6,7 @@ const Skills = () => {
   const imageWidth = "70px";
   return (
     <div className="skills">
-      <Watermark text="MES TECHNOLOGIES" />
+      <Watermark text="MES TECHNOS" />
       <Fade bottom delay={1000} fraction={0.9}>
         <div className="skills__intro">
           <h2 className="skills__intro__quote">
@@ -16,32 +16,17 @@ const Skills = () => {
         </div>
       </Fade>
       {/* Mes technologies front */}
-      <h4>{`< Mes technologies favorites  / >`}</h4>
+      <hr className="skills__hr" data-content="Mes technologies front-end" />
       <div className="skills__container">
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Figma-light.svg"
-            alt=""
+            src="./public/assets/images/TypeScript.svg"
+            alt="typescript"
             width={imageWidth}
           />
-          <h2> Figma </h2>
+          <h2> Typescript </h2>
         </div>
-        <div className="skills__container__box">
-          <img
-            src="./public/assets/images/TailwindCSS-Light.svg"
-            alt=""
-            width={imageWidth}
-          />
-          <h2> Tailwind </h2>
-        </div>
-        <div className="skills__container__box">
-          <img
-            src="./public/assets/images/VSCode-Light.svg"
-            alt=""
-            width={imageWidth}
-          />
-          <h2> VS Code </h2>
-        </div>
+
         <div className="skills__container__box">
           <img
             src="./public/assets/images/React-Light.svg"
@@ -52,16 +37,21 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/MySQL-Light.svg"
-            alt="mysql"
+            src="./public/assets/images/Material-Light.svg"
+            alt="MaterialUI"
             width={imageWidth}
           />
-          <h2> MySQL </h2>
+          <h2> Material UI </h2>
         </div>
-      </div>
-      {/* Mes technologies back */}
-      <h4>{`< Mes technologies favorites  / >`}</h4>
-      <div className="skills__container">
+
+        <div className="skills__container__box">
+          <img
+            src="./public/assets/images/Sass.svg"
+            alt="sass"
+            width={imageWidth}
+          />
+          <h2> Sass </h2>
+        </div>
         <div className="skills__container__box">
           <img
             src="./public/assets/images/VueJS-Light.svg"
@@ -80,13 +70,25 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Material-Light.svg"
-            alt="MaterialUI"
+            src="./public/assets/images/Angular-Light.svg"
+            alt="angular"
             width={imageWidth}
           />
-          <h2> Material UI </h2>
+          <h2> Angular </h2>
         </div>
 
+        <div className="skills__container__box">
+          <img
+            src="./public/assets/images/TailwindCSS-Light.svg"
+            alt=""
+            width={imageWidth}
+          />
+          <h2> Tailwind </h2>
+        </div>
+      </div>
+      {/* Mes technologies back */}
+      <hr className="skills__hr" data-content="Mes technologies back-end" />
+      <div className="skills__container">
         <div className="skills__container__box">
           <img
             src="./public/assets/images/Javascript.svg"
@@ -94,26 +96,6 @@ const Skills = () => {
             width={imageWidth}
           />
           <h2> Javascipt </h2>
-        </div>
-      </div>
-      {/* Mes autres outils */}
-      <h4>{`< Mes technologies back  / >`}</h4>
-      <div className="skills__container">
-        <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Git.svg"
-            alt="Git"
-            width={imageWidth}
-          />
-          <h2> Git </h2>
-        </div>
-        <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Jest.svg"
-            alt="Jest"
-            width={imageWidth}
-          />
-          <h2> Jest </h2>
         </div>
         <div className="skills__container__box">
           <img
@@ -133,20 +115,52 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Sass.svg"
-            alt="sass"
+            src="./public/assets/images/MySQL-Light.svg"
+            alt="mysql"
             width={imageWidth}
           />
-          <h2> Sass </h2>
+          <h2> MySQL </h2>
+        </div>
+      </div>
+      {/* Mes autres outils */}
+      <hr
+        className="skills__hr"
+        data-content="Les autres outils que j'utilise"
+      />
+      <div className="skills__container">
+        <div className="skills__container__box">
+          <img
+            src="./public/assets/images/Figma-light.svg"
+            alt=""
+            width={imageWidth}
+          />
+          <h2> Figma </h2>
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/TypeScript.svg"
-            alt="typescript"
+            src="./public/assets/images/Git.svg"
+            alt="Git"
             width={imageWidth}
           />
-          <h2> Typescript </h2>
+          <h2> Git </h2>
         </div>
+        <div className="skills__container__box">
+          <img
+            src="./public/assets/images/VSCode-Light.svg"
+            alt=""
+            width={imageWidth}
+          />
+          <h2> VS Code </h2>
+        </div>
+        <div className="skills__container__box">
+          <img
+            src="./public/assets/images/Jest.svg"
+            alt="Jest"
+            width={imageWidth}
+          />
+          <h2> Jest </h2>
+        </div>
+
         <div className="skills__container__box">
           <img
             src="./public/assets/images/Bash-Light.svg"
@@ -154,22 +168,6 @@ const Skills = () => {
             width={imageWidth}
           />
           <h2> Bash </h2>
-        </div>
-        <div className="skills__container__box">
-          <img
-            src="./public/assets/images/HTML.svg"
-            alt="html"
-            width={imageWidth}
-          />
-          <h2> HTML </h2>
-        </div>
-        <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Angular-Light.svg"
-            alt="angular"
-            width={imageWidth}
-          />
-          <h2> Angular </h2>
         </div>
       </div>
     </div>

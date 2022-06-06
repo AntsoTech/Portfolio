@@ -19,18 +19,19 @@
 @media all and (min-width: 768px) {
   .watermark {
     position: absolute;
-    top: 5vh;
+    top: 1vh;
     left: 6vw;
     background-color: transparent;
     z-index: 1;
 
     &__title {
       font-family: "FiraCode-Medium";
-      font-size: 155px;
+      font-size: 135px;
       color: $light-color;
       opacity: 10%;
       overflow-wrap: anywhere;
       overflow: hidden;
+      text-align: center;
     }
   }
 }

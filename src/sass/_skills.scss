@@ -1,7 +1,7 @@
 .skills {
   height: 100%;
-  width: 90vw;
-  padding: 10% 10%;
+  width: 80vw;
+  padding: 30vh 10vw 20vh 10vw;
   background-color: $main-color;
   position: relative;
   z-index: 20;
@@ -34,6 +34,29 @@
     }
   }
 
+  &__hr {
+    border: none;
+    outline: 0;
+    border-top: 1px solid ; 
+    color: $tertiary-color;
+    opacity: 0.6;
+    overflow: visible;
+    text-align: center;
+    height: 10px;
+    margin: 50px 0px 10px 0px;
+  }
+
+  &__hr:after {
+    background: $main-color;
+    color: $tertiary-color;
+    font-family: "Firacode-Light";
+    border-radius: 12px;
+    content: attr(data-content);
+    padding: 0px 35px;
+    position: relative;
+    top: -110%;
+  }
+
   &__container {
     display: flex;
     justify-content: center;
@@ -41,7 +64,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
     height: auto;
-    width: 90vw;
+    width: 80vw;
     padding: 5 5 5 5;
     opacity: 1;
     z-index: 20;
