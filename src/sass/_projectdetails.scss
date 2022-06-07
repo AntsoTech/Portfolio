@@ -1,9 +1,9 @@
 .projectDetails {
   display: flex;
   flex-direction: column;
-  height: 95vh;
+  height: 75vh;
   width: 100%;
-  padding-top: 5vh;
+  padding-top: 10vh;
   position: relative;
 
   &__titles {
@@ -16,7 +16,7 @@
     bottom: 2vh;
     right: 4vw;
     height: 35vh;
-    padding-bottom: 5vh;
+    padding-bottom: 0;
 
     &__tags {
       display: flex;
@@ -56,7 +56,7 @@
       font-size: 11.7vw;
       font-family: "Lato-regular";
       text-align: left;
-      top: -15%;
+      top: -126%;
       left: 2vw;
       position: absolute;
       text-shadow: 1px 1px 2px rgba(11, 11, 11, 0.4);
@@ -65,10 +65,10 @@
 
   img {
     width: 90vw;
-    height: 90vh;
+    height: 75vh;
     object-fit: cover;
     z-index: 10;
-    border-radius: 10px;
+    border-radius: 2px;
   }
 
   &__imagehorizontal {
@@ -79,7 +79,7 @@
 @media all and (min-width: 768px) {
   .projectDetails {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
@@ -90,6 +90,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 0%;
+      overflow: hidden;
     }
     &__titles {
       grid-area: 1 / 2 / 5 / 4;
