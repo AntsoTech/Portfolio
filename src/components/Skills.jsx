@@ -16,7 +16,7 @@ const Skills = () => {
         </div>
       </Fade>
       {/* Mes technologies front */}
-      <hr className="skills__hr" data-content="Mes technologies front-end" />
+      <hr className="skills__hr" data-content="Mes technos front-end" />
       <div className="skills__container">
         <div className="skills__container__box">
           <img
@@ -87,7 +87,7 @@ const Skills = () => {
         </div>
       </div>
       {/* Mes technologies back */}
-      <hr className="skills__hr" data-content="Mes technologies back-end" />
+      <hr className="skills__hr" data-content="Mes technos back-end" />
       <div className="skills__container">
         <div className="skills__container__box">
           <img
@@ -123,10 +123,7 @@ const Skills = () => {
         </div>
       </div>
       {/* Mes autres outils */}
-      <hr
-        className="skills__hr"
-        data-content="Les autres outils que j'utilise"
-      />
+      <hr className="skills__hr" data-content="Mes autres outils" />
       <div className="skills__container">
         <div className="skills__container__box">
           <img
