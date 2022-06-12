@@ -1,0 +1,252 @@
+// Handling burger menu
+@media all and (max-width: 768px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 2%;
+    right: 3%;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 100;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+
+    &__line {
+      &-1 {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: white;
+        border-radius: 15px;
+        animation: changebardown1 1s ease-in-out forwards;
+
+        @keyframes changebardown1 {
+          from {
+            transform: rotate(-45deg) translate(-6px, 6px);
+          }
+        }
+        to {
+          display: initial;
+        }
+      }
+      &-2 {
+        width: 19px;
+        height: 2px;
+        border-radius: 15px;
+        position: absolute;
+        top: 8px;
+      }
+      &-3 {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: white;
+        border-radius: 15px;
+        top: 16px;
+        animation: changebarup3 1s ease-in-out forwards;
+
+        @keyframes changebarup3 {
+          from {
+            transform: rotate(45deg) translate(-6px, 6px);
+          }
+          to {
+            display: initial;
+          }
+        }
+      }
+    }
+  }
+
+  .line-visible {
+    animation: barvisible 1s ease-in-out forwards;
+
+    @keyframes barvisible {
+      from {
+        background-color: transparent;
+      }
+      to {
+        background-color: $light-color;
+      }
+    }
+  }
+
+  .line-hidden {
+    animation: baropacity 1s ease-in-out forwards;
+
+    @keyframes baropacity {
+      from {
+        background-color: $light-color;
+      }
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+
+  .line-1-animated {
+    animation: changebardown 1s ease-in-out forwards;
+
+    @keyframes changebardown {
+      from {
+      }
+      to {
+        transform: rotate(-45deg) translate(-6px, 6px);
+      }
+    }
+  }
+  .line-3-animated {
+    animation: changebarup 1s ease-in-out forwards;
+
+    @keyframes changebarup {
+      from {
+      }
+      to {
+        transform: rotate(45deg) translate(-5px, -5px);
+      }
+    }
+  }
+}
+
+// Handling navbar mobile layout
+.nav-open {
+  display: flex;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+.nav {
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  left: 0;
+  width: 100vw;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  background-color: $dark-color;
+
+  &__line {
+    width: 3px;
+    height: 15vh;
+    background-color: white;
+    animation: slidedown 2s ease-in-out forwards;
+
+    @keyframes slidedown {
+      from {
+        height: 10vh;
+      }
+      to {
+        height: 15vh;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 7vh;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      font-family: Lato-Regular;
+      text-align: center;
+      gap: 3vh;
+
+      &__item {
+        list-style-type: none;
+
+        &__link {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    &__calltoaction {
+      border: 1px $secondary-color solid;
+      color: $secondary-color;
+      background-color: transparent;
+      width: 50vw;
+      min-width: 140px;
+      max-width: 200px;
+      height: 30px;
+      border-radius: 5px;
+      margin-top: 6vh;
+    }
+  }
+}
+
+// Handling navbar desktop layout
+@media all and (min-width: 768px) {
+  .nav {
+    height: 40px;
+    width: 100vw;
+    padding-top: 3vh;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    &__burger {
+      display: none;
+    }
+    &__line {
+      width: 5vw;
+      height: 3px;
+      background-color: white;
+      animation: none;
+    }
+
+    &__logo {
+      width: 50vw;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+
+      &__list {
+        width: 45vw;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-family: Lato-Regular;
+        text-align: right;
+
+        &__item {
+          list-style-type: none;
+
+          &__link {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+
+      &__calltoaction {
+        border: 1px $secondary-color solid;
+        color: $secondary-color;
+        background-color: transparent;
+        width: 10vw;
+        height: 30px;
+        border-radius: 5px;
+        margin: 0 2vw 0 2vw;
+      }
+    }
+  }
+}

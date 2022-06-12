@@ -1,0 +1,117 @@
+.softskills {
+  height: auto;
+  width: 80vw;
+  padding: 10vh 10vw;
+  background-color: $main-color;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    color: $light-color;
+    padding-bottom: 5vh;
+
+    &__quote {
+      font-family: "FiraCode-Light";
+      font-size: 1.1rem;
+    }
+
+    &__author {
+      font-family: "FiraCode-Light";
+      font-size: 0.9rem;
+    }
+  }
+
+  &__container {
+    height: auto;
+    width: 70vw;
+    padding-bottom: 5vh;
+    color: $light-color;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    h2 {
+      font-family: "Firacode-Light";
+      font-size: 1rem;
+      padding-left: 5vw;
+    }
+
+    h3 {
+      font-size: 2rem;
+      padding-right: 4vw;
+
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: auto;
+
+      &__line {
+        height: 1px;
+        width: 50px;
+        background-color: $light-color;
+      }
+      &__roundel {
+        height: 5px;
+        width: 5px;
+        border-radius: 2.5px;
+
+        background-color: $light-color;
+      }
+    }
+    &-left {
+      align-items: flex-start;
+      padding-left: 2vw;
+    }
+
+    &-right {
+      align-items: flex-end;
+      text-align: right;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .softskills {
+    padding: 30vh 10vw 20vh 10vw;
+    &__container {
+      h3 {
+        font-size: 3.8rem;
+      }
+
+      &__item {
+        &__line {
+          width: 300px;
+        }
+        &__roundel {
+          height: 10px;
+          width: 10px;
+          border-radius: 5px;
+        }
+      }
+
+      &-left {
+        align-items: flex-start;
+        padding-left: 25vw;
+      }
+
+      &-right {
+        align-items: flex-end;
+        text-align: right;
+      }
+    }
+  }
+}

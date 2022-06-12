@@ -1,0 +1,58 @@
+// Handling mobile layout
+.watermark {
+  position: absolute;
+  background-color: transparent;
+  z-index: 0;
+  top: 0;
+  left: 6vw;
+  width: 90vw;
+
+  &__line{
+    height: 2px;
+    width: 60vw;
+    opacity: 15%;
+    background-color: $light-color;
+    z-index: 1;
+    margin: auto;
+  }
+
+  &__title {
+    font-family: "FiraCode-Medium";
+    font-size: 2rem;
+    color: $light-color;
+    opacity: 10%;
+    text-align: center;
+    overflow-wrap: anywhere;
+    overflow: hidden;
+  }
+}
+
+// Handling desktop layout
+@media all and (min-width: 768px) {
+  .watermark {
+    position: absolute;
+    top: 1vh;
+    left: 6vw;
+    background-color: transparent;
+    z-index: 1;
+
+    &__line{
+      height: 1px;
+      width: 60vw;
+      opacity: 15%;
+      background-color: $light-color;
+      z-index: 1;
+      margin: auto;
+    }
+
+    &__title {
+      font-family: "FiraCode-Medium";
+      font-size: 135px;
+      color: $light-color;
+      opacity: 10%;
+      overflow-wrap: anywhere;
+      overflow: hidden;
+      text-align: center;
+    }
+  }
+}

@@ -1,7 +1,9 @@
-.app {
+.onePage {
   width: 100vw;
+  margin-left: 5%;
+  margin-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(100 116 139);
+  flex-direction: column;
 }

@@ -1,0 +1,148 @@
+.intro {
+  height: 90vh;
+  width: 90vw;
+  background-color: $main-color;
+  padding-top: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  &__text {
+    font-family: "Lato-Regular";
+    color: $light-color;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20vh;
+    margin-left: 8vw;
+    gap: 3vh;
+
+    &__quote {
+      font-family: "FiraCode-Light";
+      font-size: 0.8rem;
+      color: $tertiary-color;
+    }
+
+    &__name {
+      font-family: "Lato-Bold";
+      font-size: 1.6rem;
+    }
+
+    &__speech {
+      font-family: "Lato-Bold";
+      width: 100%;
+      font-size: 1.1rem;
+
+      &__animated {
+        color: $secondary-color;
+        font-size: 1.2rem;
+        height: 1.4rem;
+        line-height: 1.4rem;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        span {
+          position: absolute;
+          top: 0;
+          animation: slide 6s ease-in-out infinite;
+        }
+        @keyframes slide {
+          0% {
+            top: 0;
+          }
+          25% {
+            top: -1.4rem;
+          }
+          50% {
+            top: -2.8rem;
+          }
+          75% {
+            top: -4.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 30vh;
+
+    &__button1 {
+      border: 1px $secondary-color solid;
+      color: $secondary-color;
+      background-color: transparent;
+      width: 12vw;
+      min-width: 140px;
+      max-width: 200px;
+      height: 30px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    &__button2 {
+      border: none;
+      color: white;
+      background-color: $main-color;
+      width: 200px;
+      height: 30px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .intro {
+    width: 60vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+
+    &__text {
+      &__quote {
+        font-size: 0.9rem;
+      }
+
+      &__name {
+        font-size: 2.6rem;
+      }
+
+      &__speech {
+        font-size: 2.1rem;
+
+        &__animated {
+          font-size: 2.2rem;
+          height: 2.4rem;
+          line-height: 2.4rem;
+          span {
+            position: absolute;
+            top: 0;
+            animation: slide 6s ease-in-out infinite;
+          }
+          @keyframes slide {
+            0% {
+              top: 0;
+            }
+            25% {
+              top: -2.4rem;
+            }
+            50% {
+              top: -4.8rem;
+            }
+            75% {
+              top: -7.2rem;
+            }
+          }
+        }
+      }
+    }
+    &__footer {
+      margin-top: 15vh;
+    }
+  }
+}

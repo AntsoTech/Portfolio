@@ -1,0 +1,118 @@
+.about {
+  height: auto;
+  width: 80vw;
+  background-color: $main-color;
+  position: relative;
+  z-index: 2;
+  padding: 10vh 10vw 10vh 10vw;
+  color: $light-color;
+  border: none;
+
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+
+    &__title {
+      font-family: "FiraCode-Light";
+      font-size: 0.9rem;
+    }
+    &__quote {
+      font-family: "FiraCode-Light";
+      font-size: 1.1rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    margin: 3vh 6vw 0 6vw;
+
+    h3 {
+      font-family: "Firacode-Light";
+      color: $tertiary-color;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      font-family: "Firacode-Light";
+      color: $quartery-color;
+      font-size: 0.9rem;
+    }
+
+    h4 {
+      font-family: "Firacode-Light";
+      color: $secondary-color;
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-family: "Firacode-Light";
+      font-size: 0.8rem;
+    }
+
+    &__intro {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+    }
+  }
+}
+
+// Handling  desktop layout
+@media all and (min-width: 768px) {
+  .about {
+    height: auto;
+    width: 70vw;
+    padding: 30vh 15vw 20vh 15vw;
+
+    &__paragraph {
+      &__title {
+        font-size: 1rem;
+      }
+      &__quote {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__info {
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      h4 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      &__intro {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+
+      &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+      }
+    }
+  }
+}

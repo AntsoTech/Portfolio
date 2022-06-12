@@ -1,0 +1,141 @@
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  width: 100%;
+  padding-top: 10vh;
+  position: relative;
+
+  &__titles {
+    z-index: 14;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    bottom: 2vh;
+    right: 4vw;
+    height: 35vh;
+    padding-bottom: 0;
+
+    &__tags {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 1vw;
+      margin-bottom: 0%;
+    }
+
+    &__description {
+      color: $light-color;
+      background-color: rgba(0, 0, 0, 0.2);
+      width: 90%;
+      font-size: 0.9rem;
+      border-radius: 5px;
+      padding: 2% 2%;
+      margin: 2% 0;
+      font-family: "Firacode-Light";
+      text-align: justify;
+    }
+
+    &__button {
+      border: none;
+      color: $light-color;
+      background-color: $secondary-color;
+      width: 160px;
+      padding: 5px 0;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 1rem;
+      text-align: center;
+      box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary-color-hover;
+      }
+    }
+
+    h1 {
+      color: $light-color;
+      font-size: 11.7vw;
+      font-family: "Lato-regular";
+      text-align: left;
+      top: -126%;
+      left: 2vw;
+      position: absolute;
+      text-shadow: 1px 1px 2px rgba(11, 11, 11, 0.4);
+    }
+  }
+
+  img {
+    width: 90vw;
+    height: 75vh;
+    object-fit: cover;
+    z-index: 10;
+    border-radius: 2px;
+  }
+
+  &__imagehorizontal {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .projectDetails {
+    position: relative;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0%;
+      overflow: hidden;
+    }
+    &__titles {
+      grid-area: 1 / 2 / 5 / 4;
+      z-index: 4;
+      margin-right: 2vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      position: static;
+
+      &__tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1vw;
+        margin-bottom: 0%;
+      }
+
+      &__description {
+        width: 25vw;
+        font-size: 0.9rem;
+        text-align: justify;
+      }
+
+      h1 {
+        font-size: 7.7vw;
+        font-family: "Lato-regular";
+        text-align: right;
+        position: static;
+      }
+    }
+    &__imagevertical {
+      grid-area: 1 / 1 / 8 / 2;
+      margin-top: 10vh;
+    }
+
+    &__imagehorizontal {
+      grid-area: 3 / 2 / 8 / 4;
+      display: grid;
+    }
+  }
+}
