@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Intro = () => {
   return (
-    <div className="intro">
+    <div className="intro" id="intro">
       <div className="intro__text">
         <h3 className="intro__text__quote"> {`< Hello, je m'appelle >`} </h3>
         <h1 className="intro__text__name">Antso RAKOTOSON </h1>

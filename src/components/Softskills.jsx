@@ -19,7 +19,7 @@ const Softskills = () => {
   // ];
 
   return (
-    <div className="softskills">
+    <div className="softskills" id="mesvaleurs">
       <Watermark text="MES VALEURS" />
       {/* Introduction */}
       <div className="softskills__intro">

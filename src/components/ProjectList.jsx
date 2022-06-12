@@ -5,7 +5,7 @@ import Watermark from "./Watermark";
 
 const ProjectList = () => {
   return (
-    <div className="projectList">
+    <div className="projectList" id="mesprojets">
       <Watermark text="MES PROJETS" />
       <ProjectDetails2
         title="LUXURY TINY HOUSES"

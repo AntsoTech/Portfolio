@@ -4,7 +4,7 @@ import Watermark from "./Watermark";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="apropos">
       <Watermark text="MON HISTOIRE" />
       {/* Introduction text */}
       <Fade bottom delay={600} fraction={0.4}>
