@@ -9,7 +9,7 @@ const Contact = () => {
   } = useForm();
 
   const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  // console.log(errors);
 
   return (
     <div className="contact">

@@ -26,7 +26,14 @@ const Skills = () => {
           />
           <h2> Typescript </h2>
         </div>
-
+        <div className="skills__container__box">
+          <img
+            src="/assets/images/JavaScript.svg"
+            alt="Javascript"
+            width={imageWidth}
+          />
+          <h2> Javascipt </h2>
+        </div>
         <div className="skills__container__box">
           <img
             src="/assets/images/React-Light.svg"
@@ -65,6 +72,10 @@ const Skills = () => {
           <h2> Next JS </h2>
         </div>
         <div className="skills__container__box">
+          <img src="/assets/images/html.svg" alt="angular" width={imageWidth} />
+          <h2> HTML 5 </h2>
+        </div>
+        <div className="skills__container__box">
           <img
             src="/assets/images/Angular-Light.svg"
             alt="angular"
@@ -87,7 +98,7 @@ const Skills = () => {
       <div className="skills__container">
         <div className="skills__container__box">
           <img
-            src="/assets/images/Javascript.svg"
+            src="/assets/images/JavaScript.svg"
             alt="Javascript"
             width={imageWidth}
           />
@@ -126,7 +137,7 @@ const Skills = () => {
           <h2> Husky </h2>
         </div>
         <div className="skills__container__box">
-          <img src="/assets/images/Figma-light.svg" alt="" width={imageWidth} />
+          <img src="/assets/images/Figma-Light.svg" alt="" width={imageWidth} />
           <h2> Figma </h2>
         </div>
         <div className="skills__container__box">
