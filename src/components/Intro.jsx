@@ -34,7 +34,7 @@ const Intro = () => {
         <div className="intro__footer__arrow">
           <NavLink to="#blank">
             <img
-              src="./public/assets/images/down-arrow.png"
+              src="/assets/images/down-arrow.png"
               alt="Découvrir mon histoire"
               width="20vw"
             />

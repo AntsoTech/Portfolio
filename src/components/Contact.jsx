@@ -18,20 +18,20 @@ const Contact = () => {
         <h2> Retrouvez-moi sur </h2>
         <div className="contact__social__images">
           <img
-            src="./public/assets/images/linkedin.svg"
+            src="/assets/images/linkedin.svg"
             alt="Linkedin Antso"
             width="24px"
             className="verticalbar__logos__link"
           />
           <img
-            src="./public/assets/images/insta.svg"
+            src="/assets/images/insta.svg"
             alt="Instagram Antso"
             width="24px"
             className="verticalbar__logos__link"
           />
         </div>
       </div>
-      <p> ou contactez-moi via ce petit formulaire </p>
+      <p> ou contactez-moi via ce formulaire </p>
       <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
         <input
           type="text"
