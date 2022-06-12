@@ -30,6 +30,7 @@
 // Handling desktop layout
 @media all and (min-width: 768px) {
   .watermark {
+    display: none;
     position: absolute;
     top: 1vh;
     left: 6vw;

@@ -1,3 +1,4 @@
+
 // Handling burger menu
 @media all and (max-width: 768px) {
   .burger {
@@ -128,7 +129,7 @@
   position: fixed;
   z-index: 50;
   top: 0;
-  background-color: $dark-color;
+  background-color: $secondary-color-hover;
 
   &__line {
     width: 3px;
@@ -165,16 +166,16 @@
         cursor: pointer;
 
         &__link {
-          text-decoration: none;
           color: white;
         }
       }
     }
 
     &__calltoaction {
-      border: 1px $secondary-color solid;
-      color: $secondary-color;
+      border: 2px $light-color solid;
+      color: $light-color;
       background-color: transparent;
+      font-size: 1rem;
       width: 50vw;
       min-width: 140px;
       max-width: 200px;
@@ -187,6 +188,12 @@
 
 // Handling navbar desktop layout
 @media all and (min-width: 768px) {
+  .active {
+    border-bottom: 0.5px solid $secondary-color;
+    padding-bottom: 1.5px;
+    font-size: large;
+  }
+
   .nav {
     height: 40px;
     width: 100vw;
@@ -234,7 +241,6 @@
           cursor: pointer;
 
           &__link {
-            text-decoration: none;
             color: white;
           }
         }
