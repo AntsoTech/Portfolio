@@ -48,7 +48,13 @@ const NavBar = () => {
             <li className="nav__container__list__item">
               <NavLink className="nav__container__list__item__link" to="/">
                 {" "}
-                Mes compétences
+                Mes technologies
+              </NavLink>
+            </li>
+            <li className="nav__container__list__item">
+              <NavLink className="nav__container__list__item__link" to="/">
+                {" "}
+                Mes valeurs
               </NavLink>
             </li>
             <li className="nav__container__list__item">

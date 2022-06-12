@@ -49,6 +49,11 @@
       font-size: 1rem;
       text-align: center;
       box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+
+      &:hover {
+        background-color: $secondary-color-hover;
+      }
     }
 
     h1 {

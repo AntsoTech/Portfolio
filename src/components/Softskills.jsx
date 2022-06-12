@@ -3,12 +3,12 @@ import Watermark from "./Watermark";
 
 const Softskills = () => {
   const softskillsList = [
-    "👊🏽 Esprit d'équipe",
-    "🕵🏽‍♂️ Curiosité",
-    "🥷🏽 Pugnacité",
-    "👨🏽‍🏫 Organisation ",
-    "🙋🏽‍♂️ Force d'initiative",
-    "👨🏽‍🔬 Orienté-Solution",
+    { icon: "👊🏽", skill: "Esprit d'équipe" },
+    { icon: "🕵🏽‍♂️ ", skill: "Curiosité" },
+    { icon: "🥷🏽", skill: "Pugnacité" },
+    { icon: "👨🏽‍🏫", skill: "Organisation" },
+    { icon: "🙋🏽‍♂️", skill: "Initiative" },
+    { icon: "👨🏽‍🔬", skill: "Orienté-Solution" },
   ];
 
   const valuesList = [
@@ -32,18 +32,22 @@ const Softskills = () => {
       {/* Container */}
       <div className="softskills__container softskills__container-left">
         {softskillsList.map((softskill, index) => (
-          <h2 key={index} className="softskills__container__item">
-            {softskill}
-          </h2>
+          <div key={index} className="softskills__container__item">
+            <h3>{softskill.icon}</h3>
+            <div className="softskills__container__item__roundel"></div>
+            <div className="softskills__container__item__line"> </div>
+            <div className="softskills__container__item__roundel"></div>
+            <h2>{softskill.skill}</h2>
+          </div>
         ))}
       </div>
-      <div className="softskills__container softskills__container-right">
+      {/* <div className="softskills__container softskills__container-right">
         {valuesList.map((value, index) => (
           <h2 key={index} className="softskills__container__item">
             {value}
           </h2>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import React from "react";
 const Watermark = ({ text }) => {
   return (
     <div className="watermark">
+      <div className="watermark__line"></div>
       <h1 className="watermark__title"> {text} </h1>
     </div>
   );

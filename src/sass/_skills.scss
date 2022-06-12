@@ -1,7 +1,7 @@
 .skills {
   height: 100%;
   width: 80vw;
-  padding: 30vh 10vw 20vh 10vw;
+  padding: 10vh 10vw;
   background-color: $main-color;
   position: relative;
   z-index: 20;
@@ -89,5 +89,12 @@
       opacity: initial;
       border-radius: 15px;
     }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .skills {
+    width: 80vw;
+    padding: 30vh 10vw 10vh 10vw;
   }
 }

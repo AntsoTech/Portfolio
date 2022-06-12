@@ -5,6 +5,7 @@ import ProjectList from "./ProjectList";
 import Skills from "./Skills";
 import Softskills from "./Softskills";
 import Intro from "./Intro";
+import Contact from "./Contact";
 
 const OnePage = () => {
   return (
@@ -15,6 +16,7 @@ const OnePage = () => {
       <Skills />
       <Softskills />
       <ProjectList />
+      <Contact />
     </div>
   );
 };
