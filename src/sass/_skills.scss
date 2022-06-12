@@ -43,7 +43,7 @@
     overflow: visible;
     text-align: center;
     height: 10px;
-    margin: 50px 0px 10px 0px;
+    margin: 3vh 0px 3vh 0px;
   }
 
   &__hr:after {
@@ -61,11 +61,11 @@
     display: flex;
     justify-content: center;
     gap: 6vh;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     height: auto;
+    margin: auto;
     width: 80vw;
-    padding: 5 5 5 5;
     opacity: 1;
     z-index: 20;
 
@@ -96,5 +96,12 @@
   .skills {
     width: 80vw;
     padding: 30vh 10vw 10vh 10vw;
+
+    &__hr {
+      margin: 7vh 0px 3vh 0px;
+    }
+    &__container {
+      width: 60vw;
   }
+}
 }
