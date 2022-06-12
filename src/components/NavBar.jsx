@@ -35,7 +35,7 @@ const NavBar = () => {
       <div className={isOpen ? "nav nav-open" : "nav nav-hidden"}>
         <div className="nav__line" />
         <div className="nav__logo">
-          <img src="./public/assets/images/logo.svg" alt="logo" />
+          <img src="/assets/images/logo.svg" alt="logo" />
         </div>
         <div className="nav__container">
           <ul className="nav__container__list">

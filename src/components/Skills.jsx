@@ -20,7 +20,7 @@ const Skills = () => {
       <div className="skills__container">
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/TypeScript.svg"
+            src="/assets/images/TypeScript.svg"
             alt="typescript"
             width={imageWidth}
           />
@@ -29,7 +29,7 @@ const Skills = () => {
 
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/React-Light.svg"
+            src="/assets/images/React-Light.svg"
             alt="react"
             width={imageWidth}
           />
@@ -37,7 +37,7 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Material-Light.svg"
+            src="/assets/images/Material-Light.svg"
             alt="MaterialUI"
             width={imageWidth}
           />
@@ -45,16 +45,12 @@ const Skills = () => {
         </div>
 
         <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Sass.svg"
-            alt="sass"
-            width={imageWidth}
-          />
+          <img src="/assets/images/Sass.svg" alt="sass" width={imageWidth} />
           <h2> Sass </h2>
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/VueJS-Light.svg"
+            src="/assets/images/VueJS-Light.svg"
             alt="vuejs"
             width={imageWidth}
           />
@@ -62,7 +58,7 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Next-Light.svg"
+            src="/assets/images/Next-Light.svg"
             alt="NextJS"
             width={imageWidth}
           />
@@ -70,7 +66,7 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Angular-Light.svg"
+            src="/assets/images/Angular-Light.svg"
             alt="angular"
             width={imageWidth}
           />
@@ -79,7 +75,7 @@ const Skills = () => {
 
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/TailwindCSS-Light.svg"
+            src="/assets/images/TailwindCSS-Light.svg"
             alt=""
             width={imageWidth}
           />
@@ -91,7 +87,7 @@ const Skills = () => {
       <div className="skills__container">
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Javascript.svg"
+            src="/assets/images/Javascript.svg"
             alt="Javascript"
             width={imageWidth}
           />
@@ -99,7 +95,7 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/ExpressJS-Light.svg"
+            src="/assets/images/ExpressJS-Light.svg"
             alt="Express"
             width={imageWidth}
           />
@@ -107,7 +103,7 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/NodeJS-Light.svg"
+            src="/assets/images/NodeJS-Light.svg"
             alt="NodeJS"
             width={imageWidth}
           />
@@ -115,7 +111,7 @@ const Skills = () => {
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/MySQL-Light.svg"
+            src="/assets/images/MySQL-Light.svg"
             alt="mysql"
             width={imageWidth}
           />
@@ -126,49 +122,33 @@ const Skills = () => {
       <hr className="skills__hr" data-content="Mes autres outils" />
       <div className="skills__container">
         <div className="skills__container__box">
-          <img
-            src="./public/assets/images/husky.png"
-            alt="husky"
-            width={imageWidth}
-          />
+          <img src="/assets/images/husky.png" alt="husky" width={imageWidth} />
           <h2> Husky </h2>
         </div>
         <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Figma-light.svg"
-            alt=""
-            width={imageWidth}
-          />
+          <img src="/assets/images/Figma-light.svg" alt="" width={imageWidth} />
           <h2> Figma </h2>
         </div>
         <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Git.svg"
-            alt="Git"
-            width={imageWidth}
-          />
+          <img src="/assets/images/Git.svg" alt="Git" width={imageWidth} />
           <h2> Git </h2>
         </div>
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/VSCode-Light.svg"
+            src="/assets/images/VSCode-Light.svg"
             alt=""
             width={imageWidth}
           />
           <h2> VS Code </h2>
         </div>
         <div className="skills__container__box">
-          <img
-            src="./public/assets/images/Jest.svg"
-            alt="Jest"
-            width={imageWidth}
-          />
+          <img src="/assets/images/Jest.svg" alt="Jest" width={imageWidth} />
           <h2> Jest </h2>
         </div>
 
         <div className="skills__container__box">
           <img
-            src="./public/assets/images/Bash-Light.svg"
+            src="/assets/images/Bash-Light.svg"
             alt="bash"
             width={imageWidth}
           />
