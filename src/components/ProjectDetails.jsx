@@ -33,14 +33,11 @@ const ProjectDetails = ({
         </Fade>
         <Fade bottom fraction={0.4} delay={200} distance="150px">
           <div className="projectDetails__imagevertical">
-            <img
-              src={`./public/assets/images/${imagevertical}`}
-              alt={imagevertical}
-            />
+            <img src={`/assets/images/${imagevertical}`} alt={imagevertical} />
           </div>
           <div className="projectDetails__imagehorizontal">
             <img
-              src={`./public/assets/images/${imagehorizontal}`}
+              src={`/assets/images/${imagehorizontal}`}
               alt={imagehorizontal}
             />
           </div>

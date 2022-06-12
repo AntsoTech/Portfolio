@@ -5,25 +5,25 @@ const VerticalBar = () => {
     <div className="verticalbar">
       <div className="verticalbar__logos">
         <img
-          src="./public/assets/images/linkedin.svg"
+          src="/assets/images/linkedin.svg"
           alt="Linkedin Antso"
           width="24px"
           className="verticalbar__logos__link"
         />
         <img
-          src="./public/assets/images/insta.svg"
+          src="/assets/images/insta.svg"
           alt="Instagram Antso"
           width="24px"
           className="verticalbar__logos__link"
         />
         <img
-          src="./public/assets/images/github.svg"
+          src="/assets/images/github.svg"
           alt="Github Antso"
           width="24px"
           className="verticalbar__logos__link"
         />
         <img
-          src="./public/assets/images/cv.svg"
+          src="/assets/images/cv.svg"
           alt="CV Antso"
           width="24px"
           className="verticalbar__logos__link"
