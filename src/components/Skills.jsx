@@ -72,7 +72,7 @@ const Skills = () => {
           <h2> Next JS </h2>
         </div>
         <div className="skills__container__box">
-          <img src="/assets/images/html.svg" alt="angular" width={imageWidth} />
+          <img src="/assets/images/html5.svg" alt="html5" width={imageWidth} />
           <h2> HTML 5 </h2>
         </div>
         <div className="skills__container__box">
