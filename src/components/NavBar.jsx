@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import VerticalBar from "./VerticalBar";
 
 const NavBar = () => {
@@ -40,33 +40,69 @@ const NavBar = () => {
         <div className="nav__container">
           <ul className="nav__container__list">
             <li className="nav__container__list__item">
-              <NavLink className="nav__container__list__item__link" to="/">
+              <Link
+                className="nav__container__list__item__link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                to="apropos"
+                onClick={() => setIsOpen(false)}
+              >
                 {" "}
                 Mon histoire
-              </NavLink>
+              </Link>
             </li>
             <li className="nav__container__list__item">
-              <NavLink className="nav__container__list__item__link" to="/">
+              <Link
+                className="nav__container__list__item__link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                to="mestechnologies"
+                onClick={() => setIsOpen(false)}
+              >
                 {" "}
                 Mes technologies
-              </NavLink>
+              </Link>
             </li>
             <li className="nav__container__list__item">
-              <NavLink className="nav__container__list__item__link" to="/">
+              <Link
+                className="nav__container__list__item__link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                to="mesvaleurs"
+                onClick={() => setIsOpen(false)}
+              >
                 {" "}
                 Mes valeurs
-              </NavLink>
+              </Link>
             </li>
             <li className="nav__container__list__item">
-              <NavLink className="nav__container__list__item__link" to="/">
+              <Link
+                className="nav__container__list__item__link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                to="mesprojets"
+                onClick={() => setIsOpen(false)}
+              >
                 {" "}
                 Mes projets
-              </NavLink>
+              </Link>
             </li>
           </ul>
           <button type="button" className="nav__container__calltoaction">
-            {" "}
-            Me contacter{" "}
+            <Link
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              to="contact"
+              onClick={() => setIsOpen(false)}
+            >
+              {" "}
+              Me contacter{" "}
+            </Link>
           </button>
         </div>
         <VerticalBar />

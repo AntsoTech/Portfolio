@@ -5,7 +5,7 @@ import Watermark from "./Watermark";
 const Skills = () => {
   const imageWidth = "60px";
   return (
-    <div className="skills">
+    <div className="skills" id="mestechnologies">
       <Watermark text="MES TECHNOS" />
       <Fade bottom delay={1000} fraction={0.9}>
         <div className="skills__intro">

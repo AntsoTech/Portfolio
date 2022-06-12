@@ -8,7 +8,7 @@ const Contact = () => {
   // console.log(errors);
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <h1> Une question ? Une discussion ? Un café ? </h1>
       <div className="contact__social">
         <h2> Retrouvez-moi sur </h2>
