@@ -9,17 +9,18 @@ const ProjectDetails = ({
   imagehorizontal,
   description,
   url,
+  skills,
 }) => {
   return (
     <div>
       <div className="projectDetails">
-        <Fade top cascade fraction={0.3}>
+        <Fade top cascade>
           <div className="projectDetails__titles">
             <h1>{title}</h1>
             <div className="projectDetails__titles__tags">
-              <Tag text="React" />
-              <Tag text="Javascript" />
-              <Tag text="HTML" />
+              <Tag text={skills.tag1} />
+              <Tag text={skills.tag2} />
+              <Tag text={skills.tag3} />
             </div>
             <div className="projectDetails__titles__description">
               {description}
@@ -31,7 +32,7 @@ const ProjectDetails = ({
             </a>
           </div>
         </Fade>
-        <Fade bottom fraction={0.4} delay={200} distance="150px">
+        <Fade bottom fraction={0.1} delay={200} distance="150px">
           <div className="projectDetails__imagevertical">
             <img src={`/assets/images/${imagevertical}`} alt={imagevertical} />
           </div>

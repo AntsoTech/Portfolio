@@ -43,8 +43,9 @@ const NavBar = () => {
               <Link
                 className="nav__container__list__item__link"
                 activeClass="active"
-                spy={true}
-                smooth={true}
+                spy
+                smooth
+                offset={-5}
                 to="apropos"
                 onClick={() => setIsOpen(false)}
               >
@@ -56,8 +57,8 @@ const NavBar = () => {
               <Link
                 className="nav__container__list__item__link"
                 activeClass="active"
-                spy={true}
-                smooth={true}
+                spy
+                smooth
                 to="mestechnologies"
                 onClick={() => setIsOpen(false)}
               >
@@ -69,8 +70,8 @@ const NavBar = () => {
               <Link
                 className="nav__container__list__item__link"
                 activeClass="active"
-                spy={true}
-                smooth={true}
+                spy
+                smooth
                 to="mesvaleurs"
                 onClick={() => setIsOpen(false)}
               >
@@ -82,8 +83,8 @@ const NavBar = () => {
               <Link
                 className="nav__container__list__item__link"
                 activeClass="active"
-                spy={true}
-                smooth={true}
+                spy
+                smooth
                 to="mesprojets"
                 onClick={() => setIsOpen(false)}
               >
@@ -94,9 +95,9 @@ const NavBar = () => {
           </ul>
           <button type="button" className="nav__container__calltoaction">
             <Link
-              activeClass="active"
-              spy={true}
-              smooth={true}
+              activeClass="active1"
+              spy
+              smooth
               to="contact"
               onClick={() => setIsOpen(false)}
             >

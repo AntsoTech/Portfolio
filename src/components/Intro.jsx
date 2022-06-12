@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
@@ -15,8 +15,8 @@ const Intro = () => {
             <span>
               apportent de la valeur <br />
               suscitent de l&apos;émotion <br />
-              créent une vraie relation <br />
-              génèrent une véritable interaction
+              racontent une histoire <br />
+              créent un véritable lien
               <br />{" "}
             </span>
           </p>
@@ -28,17 +28,18 @@ const Intro = () => {
           Me contacter{" "}
         </button>
         <button type="button" className="intro__footer__button2">
-          {" "}
-          Découvrir mon histoire{" "}
+          <Link spy smooth to="apropos">
+            Découvrir mon histoire
+          </Link>
         </button>
         <div className="intro__footer__arrow">
-          <NavLink to="#blank">
+          <Link spy smooth to="apropos">
             <img
               src="/assets/images/down-arrow.png"
               alt="Découvrir mon histoire"
               width="20vw"
             />
-          </NavLink>
+          </Link>
         </div>
       </div>
     </div>
