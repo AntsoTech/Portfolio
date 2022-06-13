@@ -21,15 +21,6 @@ const Softskills = () => {
   return (
     <div className="softskills" id="mesvaleurs">
       <Watermark text="MES VALEURS" />
-      {/* Introduction */}
-      <div className="softskills__intro">
-        <h2 className="softskills__intro__quote">
-          « Ce que nous devons apprendre à faire, nous l&apos;apprendrons en le
-          faisant. »
-        </h2>
-        <h2 className="softskills__intro__author"> Aristote </h2>
-      </div>
-      {/* Container */}
       <div className="softskills__container softskills__container-left">
         {softskillsList.map((softskill, index) => (
           <div key={index} className="softskills__container__item">
@@ -41,13 +32,6 @@ const Softskills = () => {
           </div>
         ))}
       </div>
-      {/* <div className="softskills__container softskills__container-right">
-        {valuesList.map((value, index) => (
-          <h2 key={index} className="softskills__container__item">
-            {value}
-          </h2>
-        ))}
-      </div> */}
     </div>
   );
 };

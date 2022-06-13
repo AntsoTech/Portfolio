@@ -1,4 +1,3 @@
-
 // Handling burger menu
 @media all and (max-width: 768px) {
   .burger {
@@ -112,6 +111,13 @@
 }
 
 // Handling navbar mobile layout
+.logo__mobile {
+  position: fixed;
+  left: 2%;
+  top: 1%;
+  z-index: 50;
+}
+
 .nav-open {
   display: flex;
 }
@@ -182,12 +188,20 @@
       height: 30px;
       border-radius: 5px;
       margin-top: 6vh;
+      &:focus {
+        background-color: $light-color;
+        color: $secondary-color;
+      }
     }
   }
 }
 
 // Handling navbar desktop layout
 @media all and (min-width: 768px) {
+  .logo__mobile {
+    display: none;
+  }
+
   .active {
     border-bottom: 0.5px solid $secondary-color;
     padding-bottom: 1.5px;
@@ -255,6 +269,11 @@
         border-radius: 5px;
         margin: 0 2vw 0 2vw;
         cursor: pointer;
+
+        &:focus {
+          background-color: transparent;
+          color: $secondary-color;
+        }
       }
     }
   }

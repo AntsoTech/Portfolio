@@ -23,15 +23,17 @@ const Intro = () => {
         </h2>
       </div>
       <div className="intro__footer">
-        <button type="button" className="intro__footer__button1">
-          {" "}
-          Me contacter{" "}
-        </button>
-        <button type="button" className="intro__footer__button2">
-          <Link spy smooth to="apropos">
+        <Link spy smooth to="contact">
+          <button type="button" className="intro__footer__button1">
+            {" "}
+            Me contacter{" "}
+          </button>
+        </Link>
+        <Link spy smooth to="apropos">
+          <button type="button" className="intro__footer__button2">
             Découvrir mon histoire
-          </Link>
-        </button>
+          </button>
+        </Link>
         <div className="intro__footer__arrow">
           <Link spy smooth to="apropos">
             <img

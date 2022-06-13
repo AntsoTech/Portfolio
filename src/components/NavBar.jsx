@@ -7,6 +7,9 @@ const NavBar = () => {
 
   return (
     <div>
+      <div className="logo__mobile">
+        <img src="/assets/images/logo.svg" alt="logo" width={30} />
+      </div>
       <div
         className="burger"
         onClick={() => setIsOpen(!isOpen)}
@@ -45,7 +48,7 @@ const NavBar = () => {
                 activeClass="active"
                 spy
                 smooth
-                offset={-5}
+                offset={-15}
                 to="apropos"
                 onClick={() => setIsOpen(false)}
               >
@@ -59,6 +62,7 @@ const NavBar = () => {
                 activeClass="active"
                 spy
                 smooth
+                offset={-15}
                 to="mestechnologies"
                 onClick={() => setIsOpen(false)}
               >
@@ -72,11 +76,12 @@ const NavBar = () => {
                 activeClass="active"
                 spy
                 smooth
-                to="mesvaleurs"
+                offset={-5}
+                to="mesprojets"
                 onClick={() => setIsOpen(false)}
               >
                 {" "}
-                Mes valeurs
+                Mes projets
               </Link>
             </li>
             <li className="nav__container__list__item">
@@ -85,11 +90,12 @@ const NavBar = () => {
                 activeClass="active"
                 spy
                 smooth
-                to="mesprojets"
+                offset={-5}
+                to="mesvaleurs"
                 onClick={() => setIsOpen(false)}
               >
                 {" "}
-                Mes projets
+                Mes valeurs
               </Link>
             </li>
           </ul>
@@ -98,6 +104,7 @@ const NavBar = () => {
               activeClass="active1"
               spy
               smooth
+              offset={-5}
               to="contact"
               onClick={() => setIsOpen(false)}
             >

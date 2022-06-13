@@ -1,12 +1,6 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 
 const Contact = () => {
-  const { register, handleSubmit } = useForm();
-
-  const onSubmit = (data) => console.log(data);
-  // console.log(errors);
-
   return (
     <div className="contact" id="contact">
       <h1> Une question ? Une discussion ? Un café ? </h1>
@@ -28,34 +22,32 @@ const Contact = () => {
         </div>
       </div>
       <p> ou contactez-moi via ce formulaire </p>
-      <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
+      <form
+        action="https://getform.io/f/557b605b-2ae8-448a-9c16-5658bc53bf4a"
+        className="contact__form"
+        method="POST"
+      >
         <input
           type="text"
           placeholder="Votre nom"
-          {...register("Votre nom", { required: true, min: 2 })}
+          required
           className="contact__form__name"
+          name="nom"
         />
-        <input
-          type="text"
-          placeholder="Votre email"
-          {...register("Votre emailEmail", {
-            required: true,
-            pattern: /^\S+@\S+$/i,
-          })}
-        />
+        <input type="email" placeholder="Votre email" required />
         <input
           type="tel"
           placeholder="Votre numéro"
-          {...register("Votre numéro", {
-            required: true,
-            minLength: 6,
-            maxLength: 12,
-          })}
+          required
+          minLength="6"
+          maxLength="12"
+          name="email"
         />
         <textarea
-          {...register("Votre message", { required: true, min: 8 })}
+          required
           className="contact__form__textarea"
           placeholder="Votre message"
+          name="message"
         />
 
         <button type="submit" className="contact__form__submit">

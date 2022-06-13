@@ -14,8 +14,8 @@ const OnePage = () => {
       <Intro />
       <About />
       <Skills />
-      <Softskills />
       <ProjectList />
+      <Softskills />
       <Contact />
     </div>
   );
