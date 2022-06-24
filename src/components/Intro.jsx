@@ -34,7 +34,7 @@ const Intro = () => {
             Découvrir mon histoire
           </button>
         </Link>
-        <div className="intro__footer__arrow">
+        {/* <div className="intro__footer__arrow">
           <Link spy smooth to="apropos">
             <img
               src="/assets/images/down-arrow.png"
@@ -42,7 +42,7 @@ const Intro = () => {
               width="20vw"
             />
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

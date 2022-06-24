@@ -76,26 +76,12 @@ const NavBar = () => {
                 activeClass="active"
                 spy
                 smooth
-                offset={-5}
+                offset={-15}
                 to="mesprojets"
                 onClick={() => setIsOpen(false)}
               >
                 {" "}
                 Mes projets
-              </Link>
-            </li>
-            <li className="nav__container__list__item">
-              <Link
-                className="nav__container__list__item__link"
-                activeClass="active"
-                spy
-                smooth
-                offset={-5}
-                to="mesvaleurs"
-                onClick={() => setIsOpen(false)}
-              >
-                {" "}
-                Mes valeurs
               </Link>
             </li>
           </ul>
