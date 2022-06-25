@@ -49,11 +49,11 @@ const NavBar = () => {
                 spy
                 smooth
                 offset={-15}
-                to="apropos"
+                to="mesprojets"
                 onClick={() => setIsOpen(false)}
               >
                 {" "}
-                Mon histoire
+                Mes projets
               </Link>
             </li>
             <li className="nav__container__list__item">
@@ -77,11 +77,11 @@ const NavBar = () => {
                 spy
                 smooth
                 offset={-15}
-                to="mesprojets"
+                to="apropos"
                 onClick={() => setIsOpen(false)}
               >
                 {" "}
-                Mes projets
+                Mon histoire
               </Link>
             </li>
           </ul>

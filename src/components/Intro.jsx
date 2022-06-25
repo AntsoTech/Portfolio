@@ -29,20 +29,11 @@ const Intro = () => {
             Me contacter{" "}
           </button>
         </Link>
-        <Link spy smooth to="apropos">
+        <Link spy smooth to="mesprojets">
           <button type="button" className="intro__footer__button2">
-            Découvrir mon histoire
+            Découvrir mes projets
           </button>
         </Link>
-        {/* <div className="intro__footer__arrow">
-          <Link spy smooth to="apropos">
-            <img
-              src="/assets/images/down-arrow.png"
-              alt="Découvrir mon histoire"
-              width="20vw"
-            />
-          </Link>
-        </div> */}
       </div>
     </div>
   );

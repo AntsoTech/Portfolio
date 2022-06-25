@@ -72,7 +72,6 @@
     align-items: center;
     gap: 3px;
     margin-top: 25vh;
-    
 
     &__button1 {
       border: 1px $secondary-color solid;
@@ -95,9 +94,12 @@
       height: 30px;
       border-radius: 5px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 0.9rem;
       text-decoration: underline 0.5px solid;
       text-underline-offset: 3.5px;
+      font-family: "Lato-Thin";
+      font-weight: 600;
+      letter-spacing: 0.7px;
     }
 
     &__arrow {

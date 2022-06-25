@@ -11,9 +11,9 @@ const OnePage = () => {
     <div className="onePage">
       <NavBar />
       <Intro />
-      <About />
-      <Skills />
       <ProjectList />
+      <Skills />
+      <About />
       <Contact />
     </div>
   );
