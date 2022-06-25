@@ -9,7 +9,7 @@ const Skills = () => {
       <Watermark text="MES TECHNOS" />
       {/* Mes technologies front */}
       <Fade bottom cascade delay={600} fraction={0.2}>
-        <hr className="skills__hr" data-content="Mes technos front-end" />
+        <hr className="skills__hr" data-content="Front-end" />
         <div className="skills__container">
           <div className="skills__container__box">
             <img
@@ -91,7 +91,7 @@ const Skills = () => {
           </div>
         </div>
         {/* Mes technologies back */}
-        <hr className="skills__hr" data-content="Mes technos back-end" />
+        <hr className="skills__hr" data-content="Back-end" />
         <div className="skills__container">
           <div className="skills__container__box">
             <img
@@ -127,7 +127,7 @@ const Skills = () => {
           </div>
         </div>
         {/* Mes autres outils */}
-        <hr className="skills__hr" data-content="Mes autres outils" />
+        <hr className="skills__hr" data-content="Autres" />
         <div className="skills__container">
           <div className="skills__container__box">
             <img

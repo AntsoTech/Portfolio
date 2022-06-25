@@ -9,17 +9,20 @@ const About = () => {
       <Fade bottom cascade delay={600} fraction={0.2}>
         <div className="about__info">
           <div className="about__info__intro">
-            <h4>{`< Intro  / >`}</h4>
+            <h4>{`< Qui suis-je  / >`}</h4>
             <p>
-              Je suis un développeur junior spécialisé en Javascript, React et
-              node.js. Je suis actuellement en recherche d’un stage pour
-              continuer à progresser et aider une entreprise à générer de la
-              valeur pour leurs clients.
+              Passionné par les nouvelles technologies depuis petit et fort
+              d'une dizaine d'années d'exéprience dans le web, j'accompagne les
+              créateurs d'entreprise et les porteurs de projet à avoir un impact
+              conséquent et positif sur le monde. Je travaille avec eux sur la
+              manière de toucher les clients via les canaux digitaux avant de
+              construire un écosystème web viable. Je suis développeur web
+              fullstack avec une forte expérience business et marketing.
             </p>
           </div>
 
           <div className="about__info__main">
-            <h4>{`< Main / >`} </h4>
+            <h4>{`< Expériences passées / >`} </h4>
             <div className="about__info__main__experience1">
               {" "}
               <h3>{`< 2022 >`}</h3>

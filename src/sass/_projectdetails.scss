@@ -28,14 +28,14 @@
 
     &__description {
       color: $light-color;
-      background-color: rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.6);
       width: 90%;
       font-size: 0.9rem;
       border-radius: 5px;
       padding: 2% 2%;
       margin: 2% 0;
       font-family: "Firacode-Light";
-      text-align: justify;
+      text-align: right;
     }
 
     &__button {
