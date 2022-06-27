@@ -14,7 +14,15 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 12px;
+      gap: 25px;
+
+      &__logo{
+        cursor: pointer;
+
+        &:hover{
+          transform: scale3d(1.2,1.2,1.2);
+        }
+      }
     }
   }
   h1 {

@@ -108,13 +108,14 @@
 
   &__imagehorizontal {
     display: none;
+    filter: grayscale(60%);
   }
 
   &__imagevertical {
     width: 90vw;
     height: 75vh;
+    filter: grayscale(60%);
   }
-
 }
 
 @media all and (min-width: 768px) {
@@ -170,7 +171,7 @@
           text-align: center;
           box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.4);
           cursor: pointer;
-  
+
           &:hover {
             background-color: $secondary-color-hover;
           }
@@ -187,7 +188,7 @@
           cursor: pointer;
           color: $light-color;
           border-radius: 5px;
-  
+
           &__image {
             width: 20px;
             height: 20px;
