@@ -12,12 +12,13 @@ const About = () => {
             <h4>{`< Qui suis-je  / >`}</h4>
             <p>
               Passionné par les nouvelles technologies depuis petit et fort
-              d'une dizaine d'années d'exéprience dans le web, j'accompagne les
-              créateurs d'entreprise et les porteurs de projet à avoir un impact
-              conséquent et positif sur le monde. Je travaille avec eux sur la
-              manière de toucher les clients via les canaux digitaux avant de
-              construire un écosystème web viable. Je suis développeur web
-              fullstack avec une forte expérience business et marketing.
+              d&apos;une dizaine d&apos;années d&apos;exéprience dans le web,
+              j&apos;accompagne les créateurs d&apos;entreprise et les porteurs
+              de projet à avoir un impact conséquent et positif sur le monde. Je
+              travaille avec eux sur la manière de toucher les clients via les
+              canaux digitaux avant de construire un écosystème web viable. Je
+              suis développeur web fullstack avec une forte expérience business
+              et marketing.
             </p>
           </div>
 

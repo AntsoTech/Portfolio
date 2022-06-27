@@ -8,7 +8,8 @@ const ProjectDetails = ({
   imagevertical,
   imagehorizontal,
   description,
-  url,
+  urlGit,
+  urlWeb,
   skills,
 }) => {
   return (
@@ -18,18 +19,35 @@ const ProjectDetails = ({
           <div className="projectDetails__titles">
             <h1>{title}</h1>
             <div className="projectDetails__titles__tags">
-              <Tag text={skills.tag1} />
-              <Tag text={skills.tag2} />
-              <Tag text={skills.tag3} />
+              {skills &&
+                skills.map((skill, index) => (
+                  <Tag key={index} {...skills} text={skill} />
+                ))}
             </div>
             <div className="projectDetails__titles__description">
               {description}
             </div>
-            <a href={url} target="_blank" rel="noreferrer">
-              <button type="button" className="projectDetails__titles__button">
-                En savoir plus
-              </button>
-            </a>
+            <div className="projectDetails__titles__buttons">
+              <a href={urlGit} target="_blank" rel="noreferrer">
+                <button
+                  type="button"
+                  className="projectDetails__titles__buttons__2"
+                >
+                  <div className="projectDetails__titles__buttons__2__image">
+                    <img src="/assets/images/github.svg" alt="Git" />
+                  </div>{" "}
+                  Voir le code
+                </button>
+              </a>
+              <a href={urlWeb} target="_blank" rel="noreferrer">
+                <button
+                  type="button"
+                  className="projectDetails__titles__buttons__1"
+                >
+                  En savoir plus
+                </button>
+              </a>
+            </div>
           </div>
         </Fade>
         <Fade bottom fraction={0.1} delay={200} distance="150px">
