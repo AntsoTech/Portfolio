@@ -16,51 +16,45 @@ const ProjectDetails2 = ({
     <div>
       <div className="projectDetails2">
         {" "}
-        <Fade top cascade>
-          <div className="projectDetails2__titles">
-            <h1>{title}</h1>
-            <div className="projectDetails2__titles__tags">
-              {skills &&
-                skills.map((skill, index) => (
-                  <Tag key={index} {...skills} text={skill} />
-                ))}
-            </div>
-            <div className="projectDetails2__titles__description">
-              {description}
-            </div>
-            <div className="projectDetails2__titles__buttons">
-              <a href={urlGit} target="_blank" rel="noreferrer">
-                <button
-                  type="button"
-                  className="projectDetails2__titles__buttons__2"
-                >
-                  <div className="projectDetails2__titles__buttons__2__image">
-                    <img src="/assets/images/github.svg" alt="Git" />
-                  </div>{" "}
-                  Voir le code
-                </button>
-              </a>
-              <a href={urlWeb} target="_blank" rel="noreferrer">
-                <button
-                  type="button"
-                  className="projectDetails2__titles__buttons__1"
-                >
-                  Découvrir le site
-                </button>
-              </a>
-            </div>
+        <div className="projectDetails2__titles">
+          <h1>{title}</h1>
+          <div className="projectDetails2__titles__tags">
+            {skills &&
+              skills.map((skill, index) => (
+                <Tag key={index} {...skills} text={skill} />
+              ))}
           </div>
-        </Fade>
-        <Fade bottom delay={200} distance="150px">
-          <div className="projectDetails2__image1">
-            <img src={`/assets/images/${imagename1}`} alt={imagename1} />
+          <div className="projectDetails2__titles__description">
+            {description}
           </div>
-        </Fade>
-        <Fade bottom delay={600} distance="150px">
-          <div className="projectDetails2__image2">
-            <img src={`/assets/images/${imagename2}`} alt={imagename2} />
+          <div className="projectDetails2__titles__buttons">
+            <a href={urlGit} target="_blank" rel="noreferrer">
+              <button
+                type="button"
+                className="projectDetails2__titles__buttons__2"
+              >
+                <div className="projectDetails2__titles__buttons__2__image">
+                  <img src="/assets/images/github.svg" alt="Git" />
+                </div>{" "}
+                Voir le code
+              </button>
+            </a>
+            <a href={urlWeb} target="_blank" rel="noreferrer">
+              <button
+                type="button"
+                className="projectDetails2__titles__buttons__1"
+              >
+                Découvrir le site
+              </button>
+            </a>
           </div>
-        </Fade>
+        </div>
+        <div className="projectDetails2__image1">
+          <img src={`/assets/images/${imagename1}`} alt={imagename1} />
+        </div>
+        <div className="projectDetails2__image2">
+          <img src={`/assets/images/${imagename2}`} alt={imagename2} />
+        </div>
       </div>
     </div>
   );
