@@ -6,19 +6,32 @@ const Contact = () => {
       <h1> Une question ? Une discussion ? Un café ? </h1>
       <div className="contact__social">
         <h2> Retrouvez-moi sur </h2>
+
         <div className="contact__social__images">
-          <img
-            src="/assets/images/linkedin.svg"
-            alt="Linkedin Antso"
-            width="24px"
-            className="verticalbar__logos__link"
-          />
-          <img
-            src="/assets/images/insta.svg"
-            alt="Instagram Antso"
-            width="24px"
-            className="verticalbar__logos__link"
-          />
+          <a
+            href="https://www.linkedin.com/in/arakotoson/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/assets/images/linkedin.svg"
+              alt="Linkedin Antso"
+              width="24px"
+              className="contact__social__images__logo"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/antso_rk/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="/assets/images/insta.svg"
+              alt="Instagram Antso"
+              width="24px"
+              className="contact__social__images__logo"
+            />
+          </a>
         </div>
       </div>
       <p> ou contactez-moi via ce formulaire </p>

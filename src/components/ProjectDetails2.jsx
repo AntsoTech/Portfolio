@@ -51,12 +51,12 @@ const ProjectDetails2 = ({
             </div>
           </div>
         </Fade>
-        <Fade bottom fraction={0.1} delay={200} distance="150px">
+        <Fade bottom delay={200} distance="150px">
           <div className="projectDetails2__image1">
             <img src={`/assets/images/${imagename1}`} alt={imagename1} />
           </div>
         </Fade>
-        <Fade bottom fraction={0.1} delay={600} distance="150px">
+        <Fade bottom delay={600} distance="150px">
           <div className="projectDetails2__image2">
             <img src={`/assets/images/${imagename2}`} alt={imagename2} />
           </div>
