@@ -16,11 +16,11 @@
       justify-content: center;
       gap: 25px;
 
-      &__logo{
+      &__logo {
         cursor: pointer;
 
-        &:hover{
-          transform: scale3d(1.2,1.2,1.2);
+        &:hover {
+          transform: scale3d(1.2, 1.2, 1.2);
         }
       }
     }

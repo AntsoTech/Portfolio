@@ -11,14 +11,15 @@ const About = () => {
           <div className="about__info__intro">
             <h4>{`< Qui suis-je  / >`}</h4>
             <p>
-              Passionné par les nouvelles technologies depuis petit et fort
-              d&apos;une dizaine d&apos;années d&apos;exéprience dans le web,
+              Passionné par les nouvelles technologies et fort d&apos;une
+              dizaine d&apos;années d&apos;exéprience dans le web,
               j&apos;accompagne les créateurs d&apos;entreprise et les porteurs
               de projet à avoir un impact conséquent et positif sur le monde. Je
               travaille avec eux sur la manière de toucher les clients via les
-              canaux digitaux avant de construire un écosystème web viable. Je
-              suis développeur web fullstack avec une forte expérience business
-              et marketing.
+              canaux digitaux avant de construire un écosystème web viable.
+              Installé dans le Pays Basque, je travaille en 100% remote avec la
+              possibilité de me déplacer jusqu'à Toulouse, Bordeaux ou Paris
+              (sur de gros projets).
             </p>
           </div>
 

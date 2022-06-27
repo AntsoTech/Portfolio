@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  height: fit-content;
+  text-align: center;
+  background-color: $main-color;
+  color: $light-color;
+
+  p {
+    font-family: "FiraCode-Light";
+    font-size: 0.7rem;
+  }
+}
