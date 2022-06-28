@@ -211,7 +211,7 @@
   .nav {
     height: 40px;
     width: 100vw;
-    padding-top: 3vh;
+    padding: 1vh 0;
     background-color: $main-color;
     position: fixed;
     left: 0;
@@ -220,6 +220,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
 
     &__burger {
       display: none;
