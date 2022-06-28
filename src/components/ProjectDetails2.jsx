@@ -1,7 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import Tag from "./Tag";
-/* eslint react/prop-types: 0 */
 
 const ProjectDetails2 = ({
   title,
@@ -15,7 +13,6 @@ const ProjectDetails2 = ({
   return (
     <div>
       <div className="projectDetails2">
-        {" "}
         <div className="projectDetails2__titles">
           <h1>{title}</h1>
           <div className="projectDetails2__titles__tags">
