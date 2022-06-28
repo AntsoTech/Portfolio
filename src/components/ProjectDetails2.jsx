@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "./Tag";
+/* eslint-disable react/prop-types */
 
 const ProjectDetails2 = ({
   title,

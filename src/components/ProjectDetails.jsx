@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "./Tag";
+/* eslint-disable react/prop-types */
 
 const ProjectDetails = ({
   title,
@@ -41,7 +42,7 @@ const ProjectDetails = ({
                 type="button"
                 className="projectDetails__titles__buttons__1"
               >
-                En savoir plus
+                Découvrir le site
               </button>
             </a>
           </div>
