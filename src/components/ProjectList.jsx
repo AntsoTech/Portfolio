@@ -42,6 +42,15 @@ const ProjectList = () => {
         urlWeb="https://landarea.vercel.app/"
         skills={["React", "Catalogue produit", "Tailwind"]}
       />
+      <ProjectDetails2
+        title="PROJECTS PLATFORM"
+        imagename1="upsidehorizontal.jpg"
+        imagename2="upsidevertical.jpg"
+        description="Upside est une plateforme de projets collaboratives qui permet à des collaborateurs d'avoir une vue globale sur les projets de leur entreprise"
+        urlGit="https://github.com/AntsoTech/upside-front"
+        urlWeb="https://upside.vercel.app/"
+        skills={["Typescript", "ExpressJS", "Fullstack", "Tailwind"]}
+      />
     </div>
   );
 };
